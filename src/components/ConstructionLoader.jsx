@@ -14,7 +14,7 @@ export default function ConstructionLoader() {
   return (
     <div className={`construction-loader ${visible ? "" : "construction-loader-hidden"}`} aria-hidden={!visible}>
       <div className="construction-loader-content" role="status" aria-live="polite">
-        <div className="loader-brand"><span className="loader-monogram">K<sup>+</sup></span><span>KHARGO <b>CONSTRUCTIONS</b></span></div>
+        <img className="loader-logo" src="/assets/khargo-logo.webp" alt="KHARGO CONSTRUCTIONS" />
         <div className="construction-scene" aria-hidden="true">
           <div className="scene-ground" />
           <div className="scene-building">
