@@ -11,7 +11,10 @@
 @media(prefers-reduced-motion:reduce){.construction-loader *{animation:none!important;transition:none!important}.building-column{transform:translateZ(28px) scaleY(1)}.building-floor{opacity:1}.building-wall{transform:translateZ(27px) scaleY(1)}.building-beam{transform:translateZ(28px) scaleX(1)}.loader-progress span{transform:scaleX(1)}}
 
 /* Use the supplied KHARGO emblem consistently without changing the site typography. */
-.brand-logo{display:block;width:76px;height:76px;object-fit:contain;background:#000}
-.footer-logo{width:112px;height:112px}
-.loader-logo{display:block;width:92px;height:92px;object-fit:contain;background:#000;margin-bottom:8px}
+.brand-logo{display:block;width:76px;height:76px;object-fit:contain}
+.footer-logo{width:112px;height:112px;background:#f5f4ef;padding:5px}
+.loader-logo{display:block;width:92px;height:92px;object-fit:contain;margin-bottom:8px}
+.construction-loader{background:#f5f4ef;color:#252820}
+.loader-message{color:#252820}
+.loader-progress{background:rgba(37,40,32,.18)}
 @media(max-width:760px){.brand-logo{width:66px;height:66px}.footer-logo{width:104px;height:104px}}

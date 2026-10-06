@@ -15,7 +15,7 @@ export function Header() {
   }, []);
   return <header className="site-header">
     <div className="header-inner wrap">
-      <Link className="brand" to="/" aria-label="KHARGO CONSTRUCTIONS home"><img className="brand-logo" src="/assets/khargo-logo.webp" alt="KHARGO CONSTRUCTIONS" /></Link>
+      <Link className="brand" to="/" aria-label="KHARGO CONSTRUCTIONS home"><img className="brand-logo" src="/assets/khargo-logo-black.png" alt="KHARGO CONSTRUCTIONS" /></Link>
       <button className="menu-toggle" type="button" aria-expanded={open} aria-controls="primary-nav" onClick={() => setOpen(!open)} aria-label={open ? "Close navigation menu" : "Open navigation menu"}><span /><span /><span /></button>
       <nav id="primary-nav" className={`primary-nav ${open ? "is-open" : ""}`} aria-label="Main navigation">
         {nav.map(([label, to]) => <NavLink key={to} to={to} end={to === "/"} className={({ isActive }) => isActive ? "nav-link active" : "nav-link"}>{label}</NavLink>)}
@@ -28,7 +28,7 @@ export function Header() {
 export function Footer() {
   return <footer className="site-footer">
     <div className="wrap footer-top">
-      <div className="footer-brand"><Link className="brand brand-light" to="/" aria-label="KHARGO CONSTRUCTIONS home"><img className="brand-logo footer-logo" src="/assets/khargo-logo.webp" alt="KHARGO CONSTRUCTIONS" /></Link><p>Construction and structural services for homes and properties in Bongaigaon, Assam.</p><span className="footer-category">{BUSINESS.category}</span></div>
+      <div className="footer-brand"><Link className="brand brand-light" to="/" aria-label="KHARGO CONSTRUCTIONS home"><img className="brand-logo footer-logo" src="/assets/khargo-logo-black.png" alt="KHARGO CONSTRUCTIONS" /></Link><p>Construction and structural services for homes and properties in Bongaigaon, Assam.</p><span className="footer-category">{BUSINESS.category}</span></div>
       <div className="footer-links"><h2>Explore</h2>{nav.slice(1).map(([label, to]) => <Link key={to} to={to}>{label}</Link>)}<Link to="/faq">FAQs</Link></div>
       <div className="footer-links"><h2>Get in touch</h2><a href={BUSINESS.phoneLink}>Call {BUSINESS.phone}</a><a href={`${BUSINESS.whatsappLink}?text=${encodeURIComponent("Hello KHARGO CONSTRUCTIONS, I would like to discuss a construction requirement in Bongaigaon.")}`} target="_blank" rel="noreferrer">WhatsApp us ↗</a><a href={`https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(BUSINESS.address)}`} target="_blank" rel="noreferrer">Directions ↗</a><p>{BUSINESS.address}</p></div>
     </div>
